@@ -4,8 +4,6 @@ def calculatePay():
     # This first line is provided for you
     hrs = float(input("Enter Hours:"))
     rate = float(input("Enter rate: "))
-    print("Enter Hours: " + str(hrs))
-    print("Enter Rate: " + str(rate))
     print(hrs*rate)
     # end assignment
 
