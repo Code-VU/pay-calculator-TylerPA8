@@ -5,8 +5,8 @@ from unittest.mock import Mock
 import payCalculator
 
 def test_payCalculator_prints_correct_result(capfd, monkeypatch):
-    rate = randint(1, 100)
-    hours = randint(1, 100)
+    rate = random(1, 100)
+    hours = random(1, 100)
     inp = [rate, hours]
     monkeypatch.setattr('builtins.input', lambda _:inp.pop())
     payCalculator.calculatePay()
